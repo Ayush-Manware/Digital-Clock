@@ -1,19 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>&#9203; Digital Clock</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="main-container" id="main-container">
-        <div class="container-1">
-            <img src="./assets/logo.png" alt="logo" class="logo-image">
+      <div class="container-1">
+        <img src="./assets/clock_logo.png" alt="logo" class="logo-image" />
+        <div class="set-time-container">
+          <form action="">
+            <div class="input-blocks">
+              <img src="./assets/wake_up.svg" alt="Error" />
+              <label for="wake-up" class="label-class"> Set wake up time</label>
+              <select id="wake-up" name="wake-up">
+                <option value="8-9">8 AM - 9 AM</option>
+                <option value="9-10">9 AM - 10 AM</option>
+                <option value="10-11">10 AM - 11 AM</option>
+                <option value="11-12">11 AM - 12 AM</option>
+              </select>
+            </div>
+            <p class="wake-up-line">|</p>
+            <div class="input-blocks">
+              <img src="./assets/lunch_time.svg" alt="Error" />
+              <label for="lunch-time" class="label-class">
+                Set Lunch time</label
+              >
+              <select id="lunch-time" name="lunch-time">
+                <option value="1-2">1 PM - 2 PM</option>
+                <option value="2-3">2 PM - 3 PM</option>
+                <option value="3-4">3 PM - 4 PM</option>
+              </select>
+            </div>
+            <p class="wake-up-line">|</p>
+            <div class="input-blocks">
+              <img src="./assets/nap_time.svg" alt="Error" />
+              <label for="nap-time" class="label-class"> Set Nap time</label>
+              <select id="nap-time" name="nap-time">
+                <option value="1-2">2 PM - 3 PM</option>
+                <option value="2-3">3 PM - 4 PM</option>
+                <option value="3-4">4 PM - 5 PM</option>
+              </select>
+            </div>
+            <p class="wake-up-line">|</p>
+            <div class="input-blocks">
+              <img src="./assets/nap_time.svg" alt="Error" />
+              <label for="night-time" class="label-class">
+                Set Night time</label
+              >
+              <select id="night-time" name="night-time">
+                <option value="8-9">8 PM - 9 PM</option>
+                <option value="9-10">9 PM - 10 PM</option>
+                <option value="10-11">10 PM - 11 PM</option>
+              </select>
+            </div>
+          </form>
         </div>
-        <div class="container-2"></div>
+        <p class="statement-1" id="statement-1" onclick="abc()">
+          GOOD MORNING BOSS!! - WAKE UP!!
+        </p>
+        <div class="details" id="details">
+          <div class="alarmDiv">
+            <button class="setAlarm" id="$setAlarm">Set Alarm</button>
+          </div>
+          <div class="currentTime" id="currentTime">
+            <p class="morning-time" id="morning-time"></p>
+            <p class="lunch-time" id="lunch-time"></p>
+            <p class="nap-time" id="nap-time"></p>
+            <p class="night-time" id="night-time"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-2"></div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
+
+<!--  -->
+
+<!--  -->
