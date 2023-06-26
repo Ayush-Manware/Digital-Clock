@@ -24,14 +24,15 @@
     --gradient3: #FC5EFF;
 }
 
-body{
+html{
     background: var(--background);
-    padding-inline: 100px;
 }
 
 .main-container{
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 } 
 
 .container-1{
@@ -71,6 +72,15 @@ select{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
+option{
+    /* background-color: rgb(134, 207, 223); */
+    color: var(--background);
+    transition: all 0.1s linear;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: 100;
+    /* border:1ps solid red; */
+}
+
 .wake-up-line{
     color: rgba(128, 128, 128, 0.927);
     font-size: 25px;
@@ -87,30 +97,146 @@ select{
     /* border: 1px solid black; */
     width: 450px; 
     font-size: 16px;
+    transition: all 0.2s linear;
+}
+
+.input-blocks img:hover{
+    transform: translate(0px,-3px);
 }
 
 .statement-1{
-    BORDER: 1PX SOLID var(--gradient2);
+    BORDER: 1PX SOLID var(--time-text-down);
+    background: #8b11bfc3;
+    /* opacity: 70%; */
     padding: 20px;
     margin: 10px 0px;
     text-align: center;
-    color: white;
+    color: var(--white);
     font-size: 24px;
     font-family: 'Caprasimo', cursive;
+    border-radius: 15px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.alarmDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .setAlarm{
-    background-image: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
-    width: 250px;
+    background-image: linear-gradient(90deg, #6E54EC 0%, rgba(232, 26, 255, 0.707) 100%);
+    width: 230px;
+    margin: 10px 0px;
+    /* height: 150px; */
     padding: 10px;
     border: none;
     transition:all 0.1s linear;
+    font-size: 20px;
+    color: var(--background);
 }
 
 .setAlarm:hover{
-    transform: scale(1.05);
+    background:var(--gradient2);
+    color: white;
 }
 
 .currentTime{
-    
+    background:  rgba(232, 26, 255, 0.597);
+}
+.currentTime p{
+    color: var(--background);
+    padding: 5px;
+}
+
+.clockDiv{
+    display: flex;
+    justify-content: space-around;
+    /* background: var(--white); */
+    border: 1px solid white;
+    padding: 20px;
+    background: var(--white);
+}
+
+.shadowDiv-main{
+    position: relative;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.shadowDiv-1{
+    background: rgb(255, 255, 255);
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    right: 45px;
+    padding: 10px;
+    width: 400px;
+}
+
+.shadowDiv-2{
+    background: rgb(255, 255, 255);
+    opacity: 0.2;
+    z-index: -2;
+    position: absolute;
+    top: 113px;
+    right: 55px;
+    padding: 10px;
+    width: 380px;
+}
+
+.clockDiv div{
+    border: 1px solid white;
+    margin: 0px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    color: var(--background);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hour{
+    background-color: var(--time-box-background);
+    padding: 20px;
+    color: var(--time-text-up);
+}
+
+.minute{
+    background-color: var(--time-box-background);
+    padding: 20px;
+    color: var(--time-text-up);
+}
+
+.second{
+    background-color: var(--time-box-background);
+    padding: 20px;
+    color: var(--time-text-up);
+}
+
+.am_pm{
+    background-image: linear-gradient( #6E54EC 0%, rgba(232, 26, 255, 0.707) 100%);
+    padding: 15px;
+    font-size: 34px;
+    color: white;
+}
+
+.statement-2{
+    margin-top: 40px;
+    background-color: var(white);
+    color: var(--input-option);
+    background: var(--white);
+    padding:30px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Caprasimo', cursive;
+    border-radius: 15px;
 }
