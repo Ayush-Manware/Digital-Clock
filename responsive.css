@@ -1,0 +1,14 @@
+@media only screen and (min-width: 375px) {
+    .main-container{
+        display: block;
+    } 
+    .container-1{
+        width: auto;
+    }
+
+    .logo-image{
+        width: 103px;
+        height: 37px;
+        padding: 15px 10px;
+    }
+}
